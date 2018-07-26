@@ -11,7 +11,7 @@ Please go through the below example:
 ```js
   var imap = require('imap-riyo');
   var config = {
-      username: 'rejjakali94@gmail.com',
+      username: 'test@gmail.com',
       password: '********',
       host: 'imap.gmail.com',
       debug: 'off',
@@ -34,7 +34,7 @@ Please go through the below example:
 
 ```js
   var config = {
-    username: 'rejjakali94@gmail.com',
+    username: 'test@gmail.com',
     password: '***********',
     host: 'imap.gmail.com',
     port: 993, // imap port
