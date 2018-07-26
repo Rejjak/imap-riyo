@@ -79,5 +79,4 @@ You can set your won custom search criteria in the search filter. Please go thro
 
 ## Attachments
 
-Setting 'attachments: true' means, it will check attachments and will download to the project directory, while parsing emails details, otherwise it will ignore all the attachments. You can also specify for the download directory using the setting of 'attachmentOptions: { directory: 'attachments'}'. 
-
+Setting 'attachments: true' means, it will check attachments and will download to the project directory, while parsing emails details, otherwise it will ignore all the attachments. You can also specify for the download directory using the setting of 'attachmentOptions: { directory: 'attachments'}'.
