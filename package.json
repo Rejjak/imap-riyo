@@ -1,6 +1,6 @@
 {
   "name": "imap-riyo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Email Parsing",
   "main": "index.js",
   "scripts": {
@@ -28,4 +28,3 @@
     "uue": "^3.1.2"
   }
 }
-
