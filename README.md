@@ -3,7 +3,7 @@
 $ npm install imap-riyo
 ```
 ## Introduction
-This library is providing a easiest functionality for parsing emails with simple ineterface using imap module. If the authentication will success, you will get the results on 'success' API call beased on your configuration.
+This library is providing a easiest functionality for parsing emails with simple ineterface using imap module. If the authentication will success, you will get the results on 'success' API call based on your configuration.
 
 
 Please go through the below example:
@@ -29,6 +29,36 @@ Please go through the below example:
   });
 ```
 
+Output of the above example
+```js
+{
+    "data": [
+        {
+            "subject": "Hello World",
+            "text": " This is a test messages",
+            "date": "2018-07-24T06:31:45.000Z",
+            "from": [
+                {
+                    "address": "test4@gmail.com",
+                    "name": "Test developer"
+                }
+            ],
+            "to": [
+                {
+                    "address": "test14@gmail.com",
+                    "name": ""
+                }
+            ],
+            "attachment": [
+                "Screenshot from 2018-06-06 17-28-05.png",
+                "Screenshot from 2018-06-25 18-06-30.png",
+                "Screenshot from 2018-06-25 18-33-16.png"
+            ]
+        }
+    ],
+    "status": true
+}
+```
 
 ## Others configuration
 
