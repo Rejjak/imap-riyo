@@ -3,10 +3,10 @@
 $ npm install imap-riyo
 ```
 ## Introduction
-This library is providing a easiest functionality for parsing emails with simple ineterface using imap module. If the authentication will success, you will get a results on 'success' API call based on your configuration.
+This library provides easy functionality for parsing emails with a simple interface using the IMAP module. Upon successful authentication, results will be returned through the 'success' API call based on your configuration.
 
 
-Please go through the below example:
+## Example:
 
 ```js
   var imap = require('imap-riyo');
@@ -29,7 +29,7 @@ Please go through the below example:
   });
 ```
 
-On 'success' API call, you will get a result something like this
+## Example Output
 ```js
 {
     "data": [
@@ -60,7 +60,7 @@ On 'success' API call, you will get a result something like this
 }
 ```
 
-## Others configuration
+## Additional Configuration
 
 ```js
   var config = {
@@ -86,9 +86,9 @@ On 'success' API call, you will get a result something like this
   };
 ```
 
-## Others search criteria
+## Other Search Criteria
 
-Get unread emails since Jul 21, 2018:
+Retrieve unread emails since July 21, 2018:
 
 ```js
   // using the functions and variables already defined in the first example ..
@@ -96,7 +96,7 @@ Get unread emails since Jul 21, 2018:
   searchFilter:[ 'UNSEEN', ['SINCE', 'Jul 21, 2018'] ]
 
 ```
-You can set your won custom search criteria in the search filter. Please go through the below reference
+You can also set custom search criteria. For example:
 
 ```js
   var delay = 24 * 3600 * 1000;
@@ -109,4 +109,9 @@ You can set your won custom search criteria in the search filter. Please go thro
 
 ## Attachments
 
-Setting 'attachments: true' means, it will check attachments and will download to the project directory, while parsing emails details, otherwise it will ignore all the attachments. You can also specify for the download directory using the setting of 'attachmentOptions: { directory: 'attachments'}'. 
+Setting ```attachments: true``` enables downloading of attachments to the project directory while parsing email details. To specify a custom download directory, configure:
+
+```js
+  attachmentOptions: { directory: 'attachments' }
+```
+If ```attachments``` is set to ```false```, attachments will be ignored.
